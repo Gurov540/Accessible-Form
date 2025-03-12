@@ -187,3 +187,26 @@ input:invalid {
     font-size: 1rem;
   }
 }
+/* SVG progressbar */
+.progress-bg {
+  stroke: #ddd;
+  stroke-width: 5;
+  fill: none;
+}
+
+.progress-bar {
+  stroke: #1c7ed6;
+  stroke-width: 5;
+  fill: none;
+  stroke-dasharray: 282.6;
+  stroke-dashoffset: calc(282.6 - (282.6 * 65 / 100));
+  stroke-linecap: round;
+  transform: rotate(-90deg);
+  transform-origin: 50% 50%;
+}
+
+.progress-text {
+  font-size: 20px;
+  text-anchor: middle;
+  fill: #1c7ed6;
+}
