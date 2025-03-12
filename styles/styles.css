@@ -142,9 +142,11 @@ input {
   color: gray;
   text-decoration: line-through;
 }
-
-input:invalid {
-  border-color: red;
+input:valid:not(:placeholder-shown) {
+  border-color: #38d9a9;
+}
+input:invalid:not(:placeholder-shown) {
+  border-color: #ff8787;
 }
 
 @media (max-width: 768px) {
