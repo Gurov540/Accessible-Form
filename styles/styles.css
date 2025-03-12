@@ -1,10 +1,5 @@
-@font-face {
-  font-family: "Nunito";
-  src: url("./../assets/Nunito-Bold.woff2") format("woff2");
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap;
-}
+@import url(./fonts.css);
+@import url(./animation.css);
 
 * {
   margin: 0;
@@ -30,7 +25,7 @@ body {
   width: 750px;
   max-width: 100%;
   height: max-content;
-  border: 2px solid #000000;
+  border: 4px solid #1c7ed6;
   border-radius: 10px;
   padding: 30px;
 }
@@ -40,6 +35,7 @@ fieldset {
   flex-direction: column;
   border: none;
   flex: 1;
+  justify-content: space-between;
 }
 
 .update-form {
@@ -52,25 +48,32 @@ fieldset {
   align-items: center;
   gap: 20px;
 }
+.container {
+  display: flex;
+  flex-direction: column;
+}
 
-label {
+.container label {
   font-size: 1.5rem;
-  margin: 8px 0;
 }
 
 input {
-  height: 45px;
-  border: 2px solid #000000;
+  height: 42px;
+  border: 2px solid #ddd;
   border-radius: 10px;
   font-size: 1.2rem;
   padding-left: 10px;
   width: 100%;
+  margin-bottom: 15px;
+  &:focus-visible {
+    outline: 2px solid #1c7ed6;
+    border: none;
+  }
 }
 
 .password-container {
-  position: relative;
   display: flex;
-  align-items: center;
+  position: relative;
 }
 
 .password-container input {
@@ -80,9 +83,18 @@ input {
 
 .show-password-icon {
   font-size: 20px;
+  line-height: 20px;
   position: absolute;
   right: 10px;
+  bottom: 25px;
   cursor: pointer;
+  color: #1c7ed6;
+  &:hover {
+    color: #1971c2;
+  }
+  &:active {
+    color: #1864ab;
+  }
 }
 
 .show-toggle {
@@ -91,16 +103,24 @@ input {
 
 .submit-button {
   height: 45px;
-  border: 2px solid #000000;
+  border: 2px solid #1c7ed6;
+  background-color: #1c7ed6;
   border-radius: 10px;
-  background-color: #000000;
   color: #ffffff;
   font-size: 1.2rem;
   font-weight: bold;
   margin-top: 10px;
   cursor: pointer;
+  &:hover {
+    border: 2px solid #1971c2;
+    background-color: #1971c2;
+    scale: 1.01;
+  }
+  &:active {
+    border: 2px solid #1864ab;
+    background-color: #1864ab;
+  }
 }
-
 .completeness-container h1 {
   font-size: 1.4rem;
   margin-bottom: 20px;
@@ -108,7 +128,7 @@ input {
 }
 
 .completeness-list {
-  background-color: #ddd;
+  background-color: #d0ebff;
   border-radius: 10px;
   padding: 30px 10px;
   height: 100%;

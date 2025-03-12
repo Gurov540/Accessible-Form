@@ -9,49 +9,56 @@
   <body>
     <form class="accessible-form" action="">
       <fieldset class="update-form">
-        <!-- Full Name -->
-        <label for="full-name">Full Name</label>
-        <input
-          type="text"
-          name="full-name"
-          id="full-name"
-          aria-label="full name"
-          placeholder="What should we call you?"
-        />
+        <div class="input-wraper">
+          <!-- Full Name -->
+          <div class="container">
+            <label for="full-name">Full Name</label>
+            <input
+              type="text"
+              name="full-name"
+              id="full-name"
+              aria-label="full name"
+              placeholder="name"
+            />
+          </div>
 
-        <!-- Email -->
-        <label for="email">Email</label>
-        <input
-          type="email"
-          name="email"
-          id="email"
-          aria-label="email"
-          placeholder="which email should we write to you?"
-        />
+          <!-- Email -->
+          <div class="container">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              aria-label="email"
+              placeholder="email"
+            />
+          </div>
 
-        <!-- Password -->
-        <label for="password">Enter Password</label>
-        <div class="password-container">
-          <input type="password" id="password" placeholder="xxxxxxxxxxxx" />
-          <span class="show-password-icon">👁</span>
-        </div>
+          <!-- Password -->
 
-        <!-- Password -->
-        <label for="confirm-password">Enter Password</label>
-        <div class="password-container">
-          <input
-            type="password"
-            id="confirm-password"
-            placeholder="xxxxxxxxxxxx"
-          />
-          <span class="show-password-icon">👁</span>
+          <div class="container password-container">
+            <label for="password">Enter Password</label>
+            <input type="password" id="password" placeholder="password" />
+            <span class="show-password-icon">👁</span>
+          </div>
+
+          <!-- Password -->
+
+          <div class="container password-container">
+            <input
+              type="password"
+              id="confirm-password"
+              placeholder="password"
+            />
+            <span class="show-password-icon">👁</span>
+          </div>
         </div>
 
         <!-- Submit Button -->
         <button type="submit" class="submit-button">Update Profile</button>
       </fieldset>
       <fieldset class="info-form">
-        <svg width="160" height="160" viewBox="0 0 100 100">
+        <svg class="progress" width="160" height="160" viewBox="0 0 100 100">
           <!-- background -->
           <circle
             cx="50"
@@ -66,7 +73,7 @@
             cx="50"
             cy="50"
             r="45"
-            stroke="black"
+            stroke="#1c7ed6"
             stroke-width="5"
             fill="none"
             stroke-dasharray="282.6"
@@ -75,7 +82,13 @@
             transform="rotate(-90 50 50)"
           />
           <!-- text -->
-          <text x="50" y="55" font-size="20" text-anchor="middle" fill="black">
+          <text
+            x="50"
+            y="55"
+            font-size="20"
+            text-anchor="middle"
+            fill="#1c7ed6"
+          >
             65%
           </text>
         </svg>
