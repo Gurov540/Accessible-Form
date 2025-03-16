@@ -37,7 +37,7 @@
               placeholder="email"
               required
             />
-            <span id="username-error" class="error hidden"
+            <span id="email-error" class="error hidden"
               >Это поле обязательно</span
             >
           </div>
@@ -51,11 +51,13 @@
                 type="password"
                 id="password"
                 placeholder="password"
+                aria-required="true"
+                aria-describedby="password-error"
                 required
               />
               <span class="show-password-icon">👁</span>
             </div>
-            <span id="username-error" class="error hidden"
+            <span id="password-error" class="error hidden"
               >Это поле обязательно</span
             >
           </div>
@@ -73,7 +75,7 @@
               <span class="show-password-icon">👁</span>
             </div>
 
-            <span id="username-error" class="error hidden"
+            <span id="password-confirm-error" class="error hidden"
               >Это поле обязательно</span
             >
           </div>
