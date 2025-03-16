@@ -91,9 +91,11 @@ input {
   color: #1c7ed6;
   &:hover {
     color: #1971c2;
+    scale: 1.1;
   }
   &:active {
     color: #1864ab;
+    scale: 1;
   }
 }
 
@@ -119,6 +121,7 @@ input {
   &:active {
     border: 2px solid #1864ab;
     background-color: #1864ab;
+    scale: 1;
   }
 }
 .completeness-container h1 {
