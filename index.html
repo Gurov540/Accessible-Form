@@ -21,6 +21,9 @@
               placeholder="name"
               required
             />
+            <span id="username-error" class="error hidden"
+              >Это поле обязательно</span
+            >
           </div>
 
           <!-- Email -->
@@ -34,31 +37,45 @@
               placeholder="email"
               required
             />
+            <span id="username-error" class="error hidden"
+              >Это поле обязательно</span
+            >
           </div>
 
           <!-- Password -->
 
           <div class="container password-container">
             <label for="password">Enter Password</label>
-            <input
-              type="password"
-              id="password"
-              placeholder="password"
-              required
-            />
-            <span class="show-password-icon">👁</span>
+            <div class="input-wraper">
+              <input
+                type="password"
+                id="password"
+                placeholder="password"
+                required
+              />
+              <span class="show-password-icon">👁</span>
+            </div>
+            <span id="username-error" class="error hidden"
+              >Это поле обязательно</span
+            >
           </div>
 
           <!-- Password -->
 
           <div class="container password-container">
-            <input
-              type="password"
-              id="confirm-password"
-              placeholder="confirm password"
-              required
-            />
-            <span class="show-password-icon">👁</span>
+            <div class="input-wraper">
+              <input
+                type="password"
+                id="confirm-password"
+                placeholder="confirm password"
+                required
+              />
+              <span class="show-password-icon">👁</span>
+            </div>
+
+            <span id="username-error" class="error hidden"
+              >Это поле обязательно</span
+            >
           </div>
         </div>
 

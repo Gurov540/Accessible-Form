@@ -20,6 +20,10 @@ body {
   font-family: Nunito, Arial, Helvetica, sans-serif;
   padding: 20px;
 }
+
+.hidden {
+  display: none;
+}
 .accessible-form {
   display: flex;
   width: 750px;
@@ -36,21 +40,20 @@ fieldset {
   border: none;
   flex: 1;
   justify-content: space-between;
+  height: max-content;
 }
 
 .update-form {
-  width: 60%;
 }
 
 .info-form {
-  width: 40%;
   justify-content: center;
   align-items: center;
-  gap: 20px;
 }
 .container {
   display: flex;
   flex-direction: column;
+  margin-bottom: 15px;
 }
 
 .container label {
@@ -64,7 +67,6 @@ input {
   font-size: 1.2rem;
   padding-left: 10px;
   width: 100%;
-  margin-bottom: 15px;
   &:focus-visible {
     outline: 2px solid #1c7ed6;
     border: none;
@@ -73,6 +75,8 @@ input {
 
 .password-container {
   display: flex;
+}
+.input-wraper {
   position: relative;
 }
 
@@ -86,7 +90,7 @@ input {
   line-height: 20px;
   position: absolute;
   right: 10px;
-  bottom: 25px;
+  bottom: 11px;
   cursor: pointer;
   color: #1c7ed6;
   &:hover {
@@ -133,7 +137,7 @@ input {
 .completeness-list {
   background-color: #d0ebff;
   border-radius: 10px;
-  padding: 30px 10px;
+  padding: 10px 10px;
   height: 100%;
 }
 
